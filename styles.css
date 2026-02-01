@@ -185,3 +185,101 @@ footer {
     font-size: 2.4rem;
   }
 }
+
+/* ===================== */
+/* MOBILE REDESIGN */
+/* ===================== */
+
+@media (max-width: 768px) {
+
+  /* ---------- HERO ---------- */
+
+  .hero {
+    min-height: 100vh;
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+    justify-content: flex-start;
+  }
+
+  .nav {
+    position: static;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .logo {
+    font-size: 1.75rem;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+
+  .nav-links a {
+    margin: 0;
+    font-size: 0.95rem;
+    opacity: 0.85;
+  }
+
+  .hero h1 {
+    font-size: 2.6rem;
+    line-height: 1.15;
+    margin-bottom: 1.25rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    margin: 0 auto 2rem;
+  }
+
+  .cta {
+    margin: 0 auto;
+  }
+
+  /* ---------- FEATURES ---------- */
+
+  section {
+    padding: 4rem 1.5rem;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+    margin-top: 3rem;
+  }
+
+  .stat {
+    padding: 2.5rem 2rem;
+  }
+
+  .stat h3 {
+    font-size: 3.5rem;
+  }
+
+  /* ---------- EXAMPLES ---------- */
+
+  .examplesTitle {
+    text-align: center;
+    font-size: 1.75rem;
+  }
+
+  .examples {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .card {
+    aspect-ratio: 4 / 3;
+  }
+
+  /* ---------- FOOTER ---------- */
+
+  footer {
+    padding: 3rem 1.5rem;
+    font-size: 0.9rem;
+    color: #00000000;
+  }
+}
