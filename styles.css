@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Helvetica Neue:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
 html {
   scroll-behavior: smooth;
 }
@@ -27,7 +30,7 @@ body {
 }
 
 .nav {
-  position: fixed;
+  position: flex;
   top: 2rem;
   left: 6rem;
   right: 6rem;
@@ -89,6 +92,7 @@ body {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
+
 /* Stats Bar */
 .stats-bar {
     display: flex;
@@ -120,7 +124,7 @@ body {
 }
 
 .card {
-  background: url('logo1.png') center / cover no-repeat;
+  background: url('assets/logo1.png') center / cover no-repeat;
   border-radius: 1.25rem;
   padding: 2rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
@@ -458,6 +462,26 @@ footer {
     text-decoration: none;
     font-weight: 600;
     transition: transform 0.2s;
+}
+
+.nav-links a.underline-animate {
+    position: relative;
+    padding-bottom: 6px;
+}
+
+.nav-links a.underline-animate::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background: #ffffff;
+    transition: width 0.3s ease;
+}
+
+.nav-links a.underline-animate:hover::after {
+    width: 100%;
 }
 
 .nav-toggle {
