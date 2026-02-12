@@ -31,7 +31,7 @@ body {
 
 .nav {
   position: flex;
-  top: 0rem;
+  top: 4rem;
   left: 6rem;
   right: 6rem;
   display: flex;
@@ -616,4 +616,5 @@ footer {
         font-size: 2rem;
     }
 }
+
 
